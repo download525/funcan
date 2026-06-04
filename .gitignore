@@ -1,0 +1,20 @@
+# Large source datasets
+train_2.csv
+worldcitiespop.csv
+
+# Alternative / intermediate submissions
+test_functional_ratio.csv
+test_functional_residual.csv
+
+# Unrelated local materials
+кейс5.ipynb
+Старцев_Лаба_ФункАн.pdf
+План_кейс_3.md
+Критерии оценивания отчета.docx
+кейс 3.pdf
+кейс 4.pdf
+
+# Local caches
+.ipynb_checkpoints/
+__pycache__/
+*.pyc

@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+  <title>Матрица скалярных произведений тригонометрического базиса</title>
+</head>
+<body>
+  <div id="plot" style="width:100%;height:96vh;"></div>
+  <script>
+    const data = [{"type": "heatmap", "z": [[1.0000000000000002, 3.857189796792473e-17, -1.46150452851046e-16, 5.421291998778104e-17, -2.1250362580715887e-17], [4.5970547204557766e-17, 1.0, 3.250523383569917e-17, 4.3070930083961605e-17, 6.814229862716502e-17], [-1.5843195963511227e-16, 2.8826675791046733e-17, 1.0, -3.4210622241445665e-17, -9.528972796544753e-18], [8.10732465149624e-17, 5.684581312551444e-17, 3.520298544912698e-17, 1.0, 5.027211034374557e-17], [-1.2281506784066265e-17, 1.6463546244052666e-17, -4.68255275300461e-17, 6.299261424540743e-17, 1.0000000000000004]], "colorscale": "RdBu", "zmid": 0, "colorbar": {"title": "<phi_k,phi_l>"}}];
+    const layout = {"template": "plotly_white", "font": {"family": "Arial, sans-serif", "size": 14}, "margin": {"l": 60, "r": 30, "t": 70, "b": 55}, "title": {"text": "Матрица скалярных произведений тригонометрического базиса"}, "xaxis": {"title": "l"}, "yaxis": {"title": "k"}};
+    Plotly.newPlot("plot", data, layout, {responsive: true, displaylogo: false});
+  </script>
+</body>
+</html>

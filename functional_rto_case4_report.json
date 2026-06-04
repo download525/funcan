@@ -1,0 +1,179 @@
+{
+  "rows": 18657,
+  "months": [
+    [
+      2023,
+      1
+    ],
+    [
+      2023,
+      2
+    ],
+    [
+      2023,
+      3
+    ],
+    [
+      2023,
+      4
+    ],
+    [
+      2023,
+      5
+    ],
+    [
+      2023,
+      6
+    ],
+    [
+      2023,
+      7
+    ],
+    [
+      2023,
+      8
+    ],
+    [
+      2023,
+      9
+    ],
+    [
+      2023,
+      10
+    ],
+    [
+      2023,
+      11
+    ],
+    [
+      2023,
+      12
+    ],
+    [
+      2024,
+      1
+    ],
+    [
+      2024,
+      2
+    ],
+    [
+      2024,
+      3
+    ],
+    [
+      2024,
+      4
+    ],
+    [
+      2024,
+      5
+    ],
+    [
+      2024,
+      6
+    ],
+    [
+      2024,
+      7
+    ],
+    [
+      2024,
+      8
+    ],
+    [
+      2024,
+      9
+    ],
+    [
+      2024,
+      10
+    ],
+    [
+      2024,
+      11
+    ],
+    [
+      2024,
+      12
+    ],
+    [
+      2025,
+      1
+    ],
+    [
+      2025,
+      2
+    ]
+  ],
+  "window": 12,
+  "feature_count": 88,
+  "train_examples": 242541,
+  "validation_target": "2025-02",
+  "ridge_grid": [
+    {
+      "alpha": 0.01,
+      "val_mape": 9.143106245301434
+    },
+    {
+      "alpha": 0.1,
+      "val_mape": 9.143994149693238
+    },
+    {
+      "alpha": 1.0,
+      "val_mape": 9.152602901883617
+    },
+    {
+      "alpha": 10.0,
+      "val_mape": 9.221094623166081
+    },
+    {
+      "alpha": 100.0,
+      "val_mape": 9.535221411408925
+    },
+    {
+      "alpha": 1000.0,
+      "val_mape": 10.015129753464242
+    }
+  ],
+  "best_alpha": 0.01,
+  "model_val_mape": 9.143106245301434,
+  "seasonal_val_mape": 7.525846166323758,
+  "blend_weight_model": 0.0,
+  "blend_val_mape": 7.525846166323758,
+  "residual_ridge_grid": [
+    {
+      "alpha": 0.01,
+      "val_mape": 9.143106015529986
+    },
+    {
+      "alpha": 0.1,
+      "val_mape": 9.143991909083164
+    },
+    {
+      "alpha": 1.0,
+      "val_mape": 9.152580480775786
+    },
+    {
+      "alpha": 10.0,
+      "val_mape": 9.220939278473907
+    },
+    {
+      "alpha": 100.0,
+      "val_mape": 9.544580497438073
+    },
+    {
+      "alpha": 1000.0,
+      "val_mape": 10.127363463061931
+    }
+  ],
+  "best_residual_alpha": 0.01,
+  "residual_val_mape": 9.143106015529986,
+  "chosen_final_method": "seasonal",
+  "submit_path": "test.csv",
+  "functional_ratio_submit_path": "test_functional_ratio.csv",
+  "functional_residual_submit_path": "test_functional_residual.csv",
+  "prediction_min": 13395219.064790955,
+  "prediction_mean": 101810928.14531188,
+  "prediction_max": 532795642.9856705
+}

@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+  <title>Шум: ошибки и нарушения</title>
+</head>
+<body>
+  <div id="plot" style="width:100%;height:96vh;"></div>
+  <script>
+    const data = [{"type": "scatter", "mode": "lines+markers", "x": [0.0, 0.01, 0.03, 0.05, 0.1, 0.15, 0.2, 0.3], "y": [4.754259558488426e-16, 0.003715702448710498, 0.011172281088427086, 0.01866109733794486, 0.037513068105168315, 0.0565274668413219, 0.07567253786359744, 0.1140904346857463], "name": "E_rel"}, {"type": "scatter", "mode": "lines+markers", "x": [0.0, 0.01, 0.03, 0.05, 0.1, 0.15, 0.2, 0.3], "y": [0.0, 0.00177001953125, 0.005126953125, 0.00860595703125, 0.01519775390625, 0.02020263671875, 0.0274658203125, 0.040283203125], "name": "доля нарушений"}];
+    const layout = {"template": "plotly_white", "font": {"family": "Arial, sans-serif", "size": 14}, "margin": {"l": 60, "r": 30, "t": 70, "b": 55}, "title": {"text": "Шум: ошибки и нарушения"}, "xaxis": {"title": "epsilon"}, "yaxis": {"title": "значение"}};
+    Plotly.newPlot("plot", data, layout, {responsive: true, displaylogo: false});
+  </script>
+</body>
+</html>

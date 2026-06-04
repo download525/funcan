@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+  <title>Ошибка восстановления от размерности</title>
+</head>
+<body>
+  <div id="plot" style="width:100%;height:96vh;"></div>
+  <script>
+    const data = [{"type": "scatter", "mode": "lines+markers", "x": [1, 2, 3], "y": [25.33885453135039, 8.4370703601074, 2.837222673621981e-14], "name": "E_F"}, {"type": "scatter", "mode": "lines+markers", "x": [1, 2, 3], "y": [0.4245965340571324, 0.141377773334841, 4.754259558488426e-16], "name": "E_rel", "yaxis": "y2"}];
+    const layout = {"template": "plotly_white", "font": {"family": "Arial, sans-serif", "size": 14}, "margin": {"l": 60, "r": 30, "t": 70, "b": 55}, "title": {"text": "Ошибка восстановления от размерности"}, "xaxis": {"title": "m"}, "yaxis": {"title": "E_F"}, "yaxis2": {"title": "E_rel", "overlaying": "y", "side": "right"}};
+    Plotly.newPlot("plot", data, layout, {responsive: true, displaylogo: false});
+  </script>
+</body>
+</html>

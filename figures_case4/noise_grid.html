@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+  <title>Устойчивость к шуму и изменению сетки</title>
+</head>
+<body>
+  <div id="plot" style="width:100%;height:96vh;"></div>
+  <script>
+    const data = [{"type": "scatter", "mode": "lines+markers", "x": [0.0, 0.05, 0.1, 0.2, 0.35, 0.5], "y": [0.07780227447842983, 0.07865571124010497, 0.08411886650053729, 0.08853212396422473, 0.07625615888867528, 0.10089318664444909], "name": "шум в функциях"}, {"type": "scatter", "mode": "lines+markers", "x": [31, 51, 81, 121, 201], "y": [0.09416336277466432, 0.08555167478226547, 0.09189097338711916, 0.08565115754931243, 0.07780227447842983], "name": "размер сетки", "xaxis": "x2", "yaxis": "y2"}];
+    const layout = {"template": "plotly_white", "font": {"family": "Arial, sans-serif", "size": 14}, "margin": {"l": 60, "r": 30, "t": 70, "b": 55}, "title": {"text": "Устойчивость к шуму и изменению сетки"}, "xaxis": {"title": "sigma"}, "yaxis": {"title": "RMSE"}, "xaxis2": {"title": "q", "overlaying": "x", "side": "top"}, "yaxis2": {"title": "RMSE по сетке", "overlaying": "y", "side": "right"}};
+    Plotly.newPlot("plot", data, layout, {responsive: true, displaylogo: false});
+  </script>
+</body>
+</html>

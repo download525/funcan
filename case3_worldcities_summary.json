@@ -1,0 +1,74 @@
+{
+  "n_cities": 40,
+  "positive_eigenvalues": 2,
+  "negative_eigenvalues": 0,
+  "errors": {
+    "E_max": 1.0913936421275139e-11,
+    "E_F": 8.556165270563296e-11,
+    "E_rel": 8.670922845097687e-16
+  },
+  "distance_correlation": 1.0,
+  "procrustes_rmse_km": 2.1435956627040884e-12,
+  "top_cities": [
+    {
+      "AccentCity": "Moscow",
+      "Population": 10381288.0,
+      "Latitude": 55.752222,
+      "Longitude": 37.615556
+    },
+    {
+      "AccentCity": "Saint Petersburg",
+      "Population": 4039751.0,
+      "Latitude": 59.89444399999999,
+      "Longitude": 30.264167
+    },
+    {
+      "AccentCity": "Novosibirsk",
+      "Population": 1419016.0,
+      "Latitude": 55.0415,
+      "Longitude": 82.9346
+    },
+    {
+      "AccentCity": "Yekaterinburg",
+      "Population": 1287586.0,
+      "Latitude": 56.8519,
+      "Longitude": 60.6122
+    },
+    {
+      "AccentCity": "Nizhniy Novgorod",
+      "Population": 1284176.0,
+      "Latitude": 56.326944,
+      "Longitude": 44.0075
+    },
+    {
+      "AccentCity": "Samara",
+      "Population": 1134742.0,
+      "Latitude": 53.1835,
+      "Longitude": 50.1182
+    },
+    {
+      "AccentCity": "Omsk",
+      "Population": 1129289.0,
+      "Latitude": 55.0,
+      "Longitude": 73.4
+    },
+    {
+      "AccentCity": "Kazan",
+      "Population": 1104750.0,
+      "Latitude": 55.78874,
+      "Longitude": 49.122144
+    },
+    {
+      "AccentCity": "Rostov-na-Donu",
+      "Population": 1074495.0,
+      "Latitude": 47.23135,
+      "Longitude": 39.723284
+    },
+    {
+      "AccentCity": "Chelyabinsk",
+      "Population": 1062931.0,
+      "Latitude": 55.15444399999999,
+      "Longitude": 61.429722
+    }
+  ]
+}
